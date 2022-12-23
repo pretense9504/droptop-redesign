@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    />
+
+    <link href="images/favi.png" rel="shortcut icon" />
+
+    <title>DROPTOP</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="inc/common.css" rel="stylesheet" />
+    <link href="inc/store.css" rel="stylesheet" />
+
+    <script src="inc/common.js"></script>
+    <script src="inc/store.js"></script>
+  </head>
+
+  <body>
+    <!--내비영역--------->
+    <div id="outBox">
+      <div id="navTop">
+        <ul id="menuTop">
+          <li class="listTop"><a href="#">로그인</a></li>
+          <li class="listTop"><a href="#">회원가입</a></li>
+          <li class="listTop"><a href="#">멤버십</a></li>
+        </ul>
+      </div>
+
+      <div id="subBack"></div>
+
+      <div id="navBox">
+        <div id="navInBox">
+          <div class="logoBox">
+            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+
+          <div id="view">&equiv;</div>
+
+          <nav id="navi">
+            <!--내비-->
+            <ul id="menu">
+              <li class="main">
+                <a href="#">드롭탑</a>
+                <ul class="subMenu">
+                  <li class="sub">
+                    <a href="droptop_story.html">드롭탑 이야기</a>
+                  </li>
+                  <li class="sub"><a href="#">드롭탑 앱 소개</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">메뉴</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="new.html">신제품</a></li>
+                  <li class="sub"><a href="coffee.html">커피</a></li>
+                  <li class="sub"><a href="beverage.html">음료</a></li>
+                  <li class="sub"><a href="food.html">푸드</a></li>
+                  <li class="sub"><a href="cake.html">케이크</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">매장안내</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="store.html">매장찾기</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">이벤트</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="event.html">이벤트 소식</a></li>
+                  <li class="sub"><a href="#">제휴카드</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">커뮤니티</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="notice.html">공지사항</a></li>
+                  <li class="sub"><a href="#">보도자료</a></li>
+                  <li class="sub"><a href="#">제작지원</a></li>
+                  <li class="sub"><a href="#">멀티미디어</a></li>
+                  <li class="sub"><a href="#">고객의 소리</a></li>
+                </ul>
+              </li>
+              <li class="main"><button id="franchise2">창업안내</button></li>
+            </ul>
+          </nav>
+          <!--창업버튼영역--------->
+          <div id="franchiseBox">
+            <button id="franchise">창업안내</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header id="header">
+      <div id="menuContents">
+        <div id="menuImgBox">
+          <!--            <img src="images/menu_bg1.jpg" id="menuImg" alt="메뉴페이지1">-->
+
+          <div id="menuCaption">
+            <h2 class="menuName">Store</h2>
+            <p class="menuIntro">나와 가까운 드롭탑 매장찾기</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="menuOutBox">
+      <div id="topMenu">
+        <a href="#">홈</a>&nbsp;>&nbsp;<a href="store.html">매장안내</a
+        >&nbsp;>&nbsp;<a href="store.html">매장찾기</a>
+      </div>
+    </div>
+
+    <!--섹션영역--------->
+    <section id="sec1">
+      <!--       <h2>가까운 매장 찾기</h2>-->
+      <div id="mapBox">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13046.721884486697!2d126.87882764878096!3d35.1645888536337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c0f37a7764d%3A0xfe305bb99ed213c8!2z65Oc66Gt7YOR7Jyg7Iqk7YCY7Ja07KCQ!5e0!3m2!1sko!2skr!4v1652079411565!5m2!1sko!2skr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <div id="searchBox">
+          <h3>매장찾기</h3>
+
+          <select class="locationCity">
+            <option value="">도/시 선택</option>
+            <option value="">강원</option>
+            <option value="">경기</option>
+            <option value="">경남</option>
+            <option value="">경북</option>
+            <option value="">광주</option>
+            <option value="">대구</option>
+            <option value="">대전</option>
+            <option value="">부산</option>
+            <option value="">서울</option>
+            <option value="">세종</option>
+            <option value="">울산</option>
+            <option value="">인천</option>
+            <option value="">전남</option>
+            <option value="">전북</option>
+            <option value="">제주</option>
+            <option value="">충남</option>
+            <option value="">충북</option>
+          </select>
+
+          <select class="locationGu">
+            <option value="">구/군 선택</option>
+            <option value="">광산구</option>
+            <option value="">남구</option>
+            <option value="">동구</option>
+            <option value="">북구</option>
+            <option value="">서구</option>
+          </select>
+
+          <input id="storeName" type="text" placeholder="매장명" />
+
+          <button id="storeButton">검색</button>
+        </div>
+      </div>
+    </section>
+
+    <!--푸터영역--------->
+    <footer id="foot">
+      <div id="footOut">
+        <div class="logoBox logoBox2">
+          <!--로고박스-->
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <!--로고박스-->
+
+        <div id="footContents">
+          <div id="foota">
+            <a href="#">회사소개 </a>| <a href="#">개인정보취급방침 </a>|
+            <a href="#">이용약관 </a>|<a href="#"> 본/지사안내 </a>|
+            <a href="#">채용공고 </a>| <a href="#">시공업체등록 </a>|
+            <a href="#">사이트맵</a> <br />
+          </div>
+          <p id="footText">
+            서울특별시 서초구 강남대로 601 (잠원동 21-2) 8층,
+            (주)다도글로벌/드롭탑 | T.(02)541-7800<br />
+            사업자등록번호 : 211-88-47165 | 대표이사 : 임문수 |
+            개인정보관리책임자 : 김보철 | 통신판매업번호 : 2019-서울서초-1518<br />
+            마케팅∙제휴 문의 mkt@cafedroptop.com<br />
+            Copyright ⓒ 2021 DROPTOP All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--스크롤탑-->
+    <div id="top">
+      <i class="fa-solid fa-circle-chevron-up" id="scrollTop"></i>
+    </div>
+  </body>
+</html>

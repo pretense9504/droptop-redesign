@@ -1,0 +1,877 @@
+@charset "utf-8"
+    
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#preloading {   /*프리로딩 화면*/
+    width:100%; height:100%;  
+    position:fixed; top:0; left:0;
+    z-index:999; 
+    display:flex; justify-content: center;
+    align-items: center;
+    background:#fff;
+}
+
+
+#header {
+    width: 100%; height: 100vh;
+    background: url('../images/bg1.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+#headerInBox {
+    width:100%;
+}
+
+#headerTitle {
+    width:30%;
+    position: absolute;
+    top:25%; left:2%;
+    line-height: 120px;
+    text-align: center;
+    animation: header 1s both;
+}
+
+#headerTitle h1 {
+    color:  #738724;
+    font-size: 7.5rem;
+    text-shadow: 0 0 10px rgba(255,255,255,.5);
+    font-weight:700;
+}
+
+#headerTitle h2{
+    font-size: 5.5rem;
+    color: white;
+    text-shadow: 0 0 10px  rgba(0,0,0,.6);
+}
+
+.mainButton {
+    position: absolute;
+    top:58%; left:12%;
+    background: transparent;
+    border: 2px solid #738724;
+    border-radius:7px;
+    padding: 8px 16px;
+    font-size:1.1rem;
+    color: #738724;
+    cursor: pointer;
+    transition: .3s;
+    animation: header 1s .5s both;
+}
+
+
+.mainButton:hover{
+    background: #738724;
+    color: white;
+    z-index: 222;
+}
+
+
+.headMenu{
+    width:30%;
+    position: absolute;
+}
+
+.headImage{
+    width: 100%;
+    display: block;
+}
+
+.headMenu1 {
+    top:32%; left:26%;
+    animation: header 1s .8s both;
+}
+
+.headMenu2 {
+    top:12%; left:46%;
+    animation: header 1s 1.2s both;
+}
+
+.headMenu3 {
+    top:32%; right: 6.5%;
+    animation: header 1s 1.6s both;
+}
+
+.headMenuM{
+    width:100%;
+    display: none;
+    
+}
+
+.headImageM {
+    width:100%;
+    display: block;
+}
+
+.snsBox {
+    position: absolute;
+    bottom:7%; left:1.5%;
+    bottom:7%; left:1.5%;
+    font-size: 1.7rem;
+    color: #1a2680;
+}
+
+.sns {
+    text-align: center;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: .3s
+}
+
+.sns:hover {
+    color: white;
+}
+
+.sns a {
+    text-decoration: none;
+    color: #1a2680;
+}
+
+.sns a:hover{
+    opacity: .7;
+}
+
+
+
+
+/*섹션1-------------------*/
+#sec1 {
+    width: 100%; margin: auto;
+    height: 100vh;
+}
+
+#outBox1 {
+    width: 100%; max-width: 1200px; 
+    margin: auto;
+    height: 100vh;
+}
+.sectionTitle {
+    font-size: 3.5rem;
+    font-weight:bold;
+    padding-top:120px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionTitle::after {
+    content: "";
+    width: 20px; height: 20px;
+    background: #1a2680;
+    display: flex;
+    bottom: 0;
+}
+
+#bestMenu {
+    width:100%;
+    display: flex;
+    justify-content: center; align-items: center;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+.bestTitle1 {
+    padding: 0 20px;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight:bold;
+    text-decoration: none;
+    color: #aaa;
+    cursor: pointer
+}
+
+.bestTitle1:hover {
+    color: black;
+    text-decoration: underline
+}
+
+.bestActive{
+    color: black ;
+    text-decoration: underline;
+}
+
+#menuOutBox1 {
+    width: 100%;
+    position: relative;
+}
+#slideOutBox1{
+    width: 100%;
+    overflow: hidden;
+}
+
+#slideBox1, #slideBox2, #slideBox3 {
+    list-style: none; padding: 0;
+    width: 200%;
+    display: flex;
+    
+}
+
+#slideBox2, #slideBox3{
+    display: none;
+}
+
+
+.slide1{
+    width: calc(100% / 6);
+    padding: 0 10px;
+    transform: translateX(-50%); 
+    transition: .3s;
+    cursor: pointer;
+}
+
+.thumb1{
+    width: 100%;
+    display: block;
+}
+
+.caption1 {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.caption1 h2{
+    font-weight:500
+}
+
+.caption1 h3{
+    font-weight:500;
+    color: #999
+}
+
+.menuButton {
+    position: absolute;
+    top:45%; transform: translateY(-50%);
+    border: none;
+    color: #aaa;
+    font-size: 4rem;
+    background: none;
+    transition: .3s;
+    cursor: pointer
+    
+}
+
+.menuButton:hover {
+    color: black;
+}
+
+.menuLeft {left: -40px;}
+
+.menuRight {right: -40px;}
+
+
+
+
+
+
+/*섹션2-------------------*/
+
+#sec2 {
+    width:100%; height:100vh; margin: auto;
+    background: url(../images/bg3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#outBox2 {
+    width:100%; max-width: 1200px;  height: 100vh; margin: auto;
+}
+
+#outBox2 h3 {
+    font-size: 1.6rem;
+    color: #444;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 500
+}
+
+.sec2Line{
+    width: 5%; margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+        
+}
+
+#outBox2 p {
+    width:67%; margin: auto;
+    line-height: 2.2rem;
+    color: #444;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+#button925{
+    width:180px; height: 50px;
+    background: transparent;
+    border: 2.5px solid #1a2680;
+    font-size: 1.1rem;
+    color: #1a2680;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 7px 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: .3s;
+    text-align: center;
+    display: block;
+    margin: auto;
+    
+}
+
+#button925:hover {
+    background: #1a2680;
+    color: white;
+    
+}
+
+
+
+/*섹션3-------------------*/
+
+#sec3 {
+    width: 100%; height:100vh; margin: auto;
+    background: url(../images/memberbg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#outBox3 {
+    width: 100%; max-width: 1200px; margin: auto;
+    height: 100vh;
+    position: relative;
+}
+
+.sectionTitle_left {
+    justify-content: flex-start;
+}
+
+#memberContents > p{
+    width:100%; margin: auto;
+    line-height: 2.2rem;
+    color: #444;
+    font-size: 1.1rem;
+
+    padding-bottom: 40px;
+    padding-top: 50px;
+    
+}
+
+#membershipBox {
+    position: absolute;
+    right:100px;
+    bottom:5%;
+    width:30%;
+    height: 70%;
+    border-radius: 8%;
+    overflow: hidden;
+}
+
+
+#memberButton{
+    width:180px; height: 50px;
+    background: transparent;
+    border: 2.5px solid #1a2680;
+    font-size: 1.1rem;
+    color: #1a2680;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 7px 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: .3s;
+    text-align: center;
+    display: block;
+    
+}
+
+#memberButton:hover {
+    background: #1a2680;
+    color: white;
+    
+}
+
+
+
+#phone {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    
+    
+}
+
+#phoneImg{
+    width: 90%;
+    display: block;
+    margin: 20px  auto;
+}
+
+
+
+
+/*섹션4-------------------*/
+
+#sec4 {
+    width: 100%; margin: auto;
+    height: 100vh;
+    background: url(../images/bg4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#outBox4 {
+    width: 100%; max-width: 1200px; margin: auto;
+    height: 100vh;
+    position: relative;
+}
+
+.sectionTitle2 {
+    font-size: 3.5rem;
+    font-weight:bold;
+    padding-top:140px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center; 
+    color: white;
+    text-shadow: 1px 3px 4px rgba(0,0,0,.5)
+}
+
+.sectionTitle2::after {
+    content: "";
+    width: 20px; height: 20px;
+    background: #1a2680;
+    display: flex;
+    bottom: 0;
+}
+
+#subTitle4 {
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+}
+
+#sectionContents4 {
+    display: flex; flex-wrap: wrap;
+    justify-content: space-around; align-items: center;
+}
+
+.franchiseList{
+    width:250px;  
+    height:250px;
+    border: 4px solid rgba(255,255,255,.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; align-items: center;
+    cursor: pointer;
+    box-shadow:  5px 5px 5px rgba(0,0,0,.3);
+    transition: .3s;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.franchiseList a {
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+}
+
+.franchiseList:hover {
+    background: rgba(255,255,255,.3);
+    
+}
+
+.sec4Line{
+    width: 5%; margin: auto;
+    margin-bottom: 30px;
+    border-bottom: 3px solid white;
+        
+}
+
+
+/*스크롤탑버튼*/
+#top {
+    position: fixed; bottom: -80px; right: 20px;
+    font-size: 3rem; color: #bbb;
+    cursor: pointer;
+}
+
+
+@keyframes header {
+    from { transform: translateY(20%); opacity: 0;}
+    to{ transform: translateY(0); opacity:1;}
+}
+
+@keyframes title {
+    from { transform: translateY(-10%); opacity: 0;}
+    to{ transform: translateY(0); opacity:1;}
+}
+
+
+
+
+
+
+@media screen and (max-width:1300px){
+    #headerTitle>h1{
+        font-size:6.5rem;
+    }
+    
+    #headerTitle>h2{
+        font-size: 5rem;
+    }
+    
+    .mainButton{
+        padding: 6px 14px;
+        font-size: .95rem;
+    }
+    
+    .sectionTitle{
+        font-size: 3rem;
+    }
+
+    .bestTitle1 {
+        font-size: 1.2rem;
+    }
+    
+    .menuButton{
+        width: 45px; line-height: 45px;
+        color: #eee;
+        background: rgba(0,0,0,.2);
+        border-radius: 50%;
+        font-size: 2.5rem;
+    }
+
+    .menuLeft{
+        left:5px;
+    }
+    .menuRight{
+        right:3px;
+    }
+    
+    .menuButton:hover{
+        color: #888
+    }
+
+    
+    /*섹션*/
+    #outBox3 {
+        padding:3%;
+    }
+    
+    
+    .franchiseList{
+        width:170px;
+        height:170px
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    
+    .subMenu {
+        background: #fff;
+    }
+    
+    #header{
+        position: relative;
+    }
+
+    #headerTitle {
+        top:15%; left:6%;
+        line-height: 60px;
+        transition: .3s
+    }
+    
+    #headerTitle h1{
+        font-size:4rem;
+    }
+    
+    #headerTitle h2{
+        font-size: 3rem;
+    }
+    
+    .mainButton{
+        padding: 5px 10px;
+        font-size: .9rem;
+        position: absolute;
+        top:86%; left:auto;
+        right: 10%;
+        display: inline-block;
+        transition: .3s;
+        font-size: .85rem;
+        
+    }
+    
+    .headMenu{
+        display: none;
+    }
+    
+    .headMenuM{
+        display: block;
+        position: absolute;
+    }
+    
+    .headMenuM img{
+        width: 54%;
+    }
+    
+    .headMenuM1 {
+        top:30%;
+        left:24%;
+        animation: header 1s .4s both;
+    }
+    
+    .headMenuM2 {
+        top:48%;
+        left:23%;
+        animation: header 1s .8s both
+
+    }
+    
+    .headMenuM3 {
+        top:71%;
+        left:24%;
+        animation: header 1s 1.2s both;
+    }
+    
+    .snsBox {
+        position: absolute;
+        bottom:3%; left:4%;
+        font-size: 1.4rem;
+        color: #1a2680;
+}
+    
+
+    /*섹션1*/
+    .sectionTitle {
+        font-size: 2.2rem;
+
+    }
+
+    .sectionTitle2 {
+        font-size: 2.2rem;
+    }
+    
+    .bestTitle1 {
+        font-size: 1rem;
+}
+    
+    .bestTitle1{
+        padding: 0  10px;
+    }
+    
+    .menuButton{
+        color: #999;
+        background: none;
+    }
+    
+    /*섹션2*/
+    
+    #outBox2 h3{
+        font-size: 1.2rem;
+    }
+    
+    #outBox2 p {
+        width:85%;
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+    
+    .slide1 {
+        transform: translateX(0)
+    }
+    
+    #sec2 {
+        background: url(../images/bg3.jpg) no-repeat left;
+        background-size: cover;
+    }
+    
+    .commonButton {
+        font-size: .9rem;
+        padding: 0;
+        width:145px; height: 45px;
+        margin-top: 50px;
+    }
+    
+    #memberContents p{
+        width:80%;
+        font-size:1rem;
+        margin: 0;
+        margin-top: 3%
+    }
+    
+    #membershipBox {
+    position: absolute;
+    right:7%;
+    bottom:11%;
+    width:40%;
+    height: 100%;
+    border-radius: 8%;
+    overflow: hidden;
+}
+    
+    #phone {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+    #phoneImg{
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+    }
+        
+    #foota {
+        font-size: .75rem;
+    }
+        
+    #footText{
+        font-size: .7rem;
+    }
+        
+    #foot{
+        width:95%;
+    }
+
+    .logoBox2 {
+        display: none;
+    }
+
+    }
+
+
+@media screen and (max-width: 400px) {
+
+    #outBox{
+        z-index: 3;
+    }
+    
+    .sectionTitle2 {
+        font-size: 1.7rem;
+        padding-bottom: 2%;
+    }
+
+    .sectionTitle2::after {
+        width: 15px; height: 15px;
+    }
+
+    .sec2Line{
+        margin-bottom: 10%;
+    }
+    
+    .sec4Line{
+        margin-bottom: 8%;
+    }
+    
+    #subTitle4 {
+        font-size: 1.1rem;
+        margin-bottom: 4%;
+        
+    }
+    #headerTitle {
+        line-height: 45px;
+    }
+    #headerTitle h1{
+        font-size:3rem;
+    }
+    
+    #headerTitle h2{
+        font-size: 2rem;
+    }
+    
+    .mainButton{
+        padding: 5px 10px;
+        font-size: .9rem;
+        position: absolute;
+        top:86%; left:auto;
+        right: 10%;
+        transition: .3s;
+        font-size: .85rem;
+        z-index: 1;
+        
+    }
+    
+    .sectionTitle {
+        font-size: 1.7rem;
+        padding-top:100px
+    }
+    
+    .bestTitle1 {
+        font-size: .8rem;
+}
+    
+    .bestTitle1{
+        padding: 0  7px;
+        font-size: .75rem;
+    }
+    
+    #slideOutBox1 {
+        padding: 0;
+    }
+    
+    .caption1 {
+        transform: translateY(-28px)
+    }
+    
+    .caption1 h2 {
+        font-size: 1.2rem;
+    }
+    .caption1 h3 {
+        font-size: 1rem;
+    }
+
+    #outBox2 h3 {
+        font-size: 1.1rem;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        padding-top:0;
+    }
+    
+    #outBox2 p {
+        width:93%;
+        font-size: .9rem;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .commonButton {
+        margin-top: 10%;
+    }
+
+    #memberContents p{
+        width:50%;
+        font-size:.9rem;
+        margin: 0;
+        margin-top: 3%
+    }
+
+    #membershipBox {
+        position: absolute;
+        right:2%;
+        bottom:25%;
+        width:40%;
+        height: 100%;
+        border-radius: 8%;
+        overflow: hidden;
+    }
+    
+    .sectionTitle::after {
+        width: 15px; height: 15px;
+    }
+
+} 

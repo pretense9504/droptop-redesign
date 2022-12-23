@@ -1,0 +1,385 @@
+@charset "utf-8"
+    
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+
+
+#menuContents {
+    width:100%; 
+    margin: auto;
+    margin-top:80px;
+}
+
+
+#menuImgBox {
+    background: url(../images/new_bg.jpg) no-repeat center;
+    background-size: cover;
+    
+    width:100%; height: 300px;
+    
+    position: relative;
+}
+
+
+#menuImg{
+    width: 100%; display: block
+}
+
+
+#menuCaption{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0.4);
+    text-align: center;
+}
+
+.menuName{
+    font-size: 4.5rem;
+    animation: menu 1s both;
+}
+
+.menuIntro{
+    font-size: 1.1rem;
+    animation: menu 1s .5s both;
+}
+
+@keyframes menu {
+    from {transform: translateY(-20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+#menuTitleBox {
+    width:100%; line-height: 60px; margin: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+#menuTitle {
+    width: 60%; max-width: 1200px; line-height:  60px; margin: auto;
+    list-style: none; padding: 0;
+    display: flex;
+}
+
+.titleList {
+    width:50%;
+    text-align: center;
+}
+
+.titleList a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    position: relative;
+    font-weight: 500;
+}
+
+.titleList:nth-child(1) a{
+    color: #141f6d;
+    font-weight: 600;
+}
+
+.titleList:nth-child(1)>a::after {
+    content: '';
+    
+    position: absolute; bottom: 0; left:50%;
+    transform: translateX(-50%);
+    width:0; height:5px;
+    background: #141f6d;
+    transition: .3s;
+    width:75%;
+}
+
+
+
+/*섹션*/
+#container {
+    width:100%; max-width: 1200px; margin: auto;
+}
+
+#topMenu{
+    width: 100%; max-width: 1200px;
+    text-align: right; margin: auto;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+#topMenu a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: .9rem;
+}
+
+#topMenu a:hover {
+    color: #141f6d;
+    font-weight: 500
+}
+
+#topMenu a:nth-child(3){
+    color: #141f6d;
+    font-weight: 500
+}
+
+#droptopBox {
+    position: relative;
+}
+
+#droptopmain {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#droptopCaption {
+    width:80%; 
+    text-align: center;
+    position: absolute;
+    top:28%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#droptopCaption h1{
+    font-size: 6.5rem;
+    color: white;
+    text-shadow: 0 0 8px rgba(0,0,0,.5)
+}
+
+#droptopCaption h2 {
+    font-size: 1.1rem;
+    line-height: .9rem;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+
+#droptopBox2{
+    width: 100%; max-width: 1200px; margin: auto;
+    text-align: center;
+    
+}
+
+.droptopTitle {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #15315f;
+    font-weight:900 
+}
+
+.droptopLine{
+    width: 100px; margin: auto;
+    border-bottom: 4px solid #15315f;
+    margin-bottom: 40px;
+    
+}
+
+#droptopBox2 p{
+    width:60%; margin: auto;
+    text-align: center;
+    line-height: 1.8rem;
+    margin-bottom: 60px;
+    color: #444;
+}
+
+#brandNew {
+    font-size: 2.5rem;
+    color: #eb7919;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#droptopBox3{
+    width: 100%; max-width: 1200px; margin: auto; 
+
+}
+
+#newBox {
+    width:100%;
+    list-style: none; padding: 0;
+    display: flex; justify-content: space-between;
+}
+
+.new {
+    width:360px;
+    margin-top: 20px;
+}
+.new h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #e9ebf4;
+    line-height: 0.5;
+    text-align: center;
+}
+
+.new>h1>span{
+    color: #15315f;
+    opacity: .2;
+    font-size: 7rem;
+}
+
+.new h2 {
+    text-align: right;
+    color: #15315f;
+}
+
+.new p {
+    color: #444;
+    line-height: 1.8rem;
+    padding: 30px 0;
+    border-bottom: 3px solid #15315f;
+    margin-bottom: 100px;
+}
+
+
+#brandNew2 {
+    text-align: center;
+    color: #15315f;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+        
+}
+
+.brandstoryText {
+    text-align: center;
+    line-height: 1.8rem;
+    margin-bottom: 30px;
+    
+}
+
+#tasteBox{
+    width: 90%; margin: auto;
+    display: flex; justify-content: space-between;
+    list-style: none; padding: 0;
+    
+}
+
+#tasteBox img {
+    display: block;
+    width:100%;
+    border-radius: 50%;
+    margin: auto;
+    
+}
+.tasteList {
+    width:33.3333%;
+    padding: 20px;
+    margin-bottom: 60px;
+
+}
+
+#brandOut {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    
+}
+
+#brandLeft {
+    width:50%;
+}
+#brandRight {
+    width:50%;
+}
+
+#droptopLogo {
+    display: block;
+    width:80%;
+    margin: auto;
+}
+
+@media screen and (max-width:750px) {
+    #droptopCaption h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #container {
+        width:95%;
+        padding:0;
+    }
+    #droptopCaption>h1 { 
+        font-size: 2.2rem;
+    }
+    #droptopCaption>h2 {
+        font-size: 0.7rem;
+    }
+    .droptopTitle{
+        font-size:1.8rem;
+    }
+    .droptopLine {
+        width: 60px
+    }
+    .brandstoryText {
+        font-size: 0.8rem;
+    }
+    
+    #brandNew{
+        font-size: 1.4rem;
+    }
+    
+    #newBox {
+        display: block;
+    }
+    .new {
+        width:70%;
+        margin: auto;
+    }
+    
+    .new>h1 {
+        font-size: 3rem;
+    }
+    .new>h2 {
+        font-size: 1.1rem;
+        
+        
+    }
+    
+    .new>p {
+        font-size: 0.8rem;
+    }
+    
+    #tasteBox {
+        display: block;
+    }
+    .tasteList {
+        width:85%;
+        margin:auto;
+    }
+    
+    #brandOut{
+        display: block;
+    }
+    
+    #brandLeft {
+        width:100%;
+    }
+    #brandRight {
+        width:100%;
+    }
+    
+    #droptopLogo{
+        width:100%;
+        display: block;
+        padding-bottom: 50px;
+    }
+}
+
+#top {
+    position: fixed; bottom: -80px; right: 20px;
+    font-size: 3rem; color: #bbb;
+    cursor: pointer;
+}

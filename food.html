@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    />
+
+    <link href="images/favi.png" rel="shortcut icon" />
+
+    <title>DROPTOP</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="inc/common.css" rel="stylesheet" />
+    <link href="inc/food.css" rel="stylesheet" />
+
+    <script src="inc/common.js"></script>
+    <script src="inc/food.js"></script>
+  </head>
+
+  <body>
+    <!--내비영역--------->
+    <div id="outBox">
+      <div id="navTop">
+        <ul id="menuTop">
+          <li class="listTop"><a href="#">로그인</a></li>
+          <li class="listTop"><a href="#">회원가입</a></li>
+          <li class="listTop"><a href="#">멤버십</a></li>
+        </ul>
+      </div>
+
+      <div id="subBack"></div>
+
+      <div id="navBox">
+        <div id="navInBox">
+          <div class="logoBox">
+            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+
+          <div id="view">&equiv;</div>
+
+          <nav id="navi">
+            <ul id="menu">
+              <li class="main">
+                <a href="#">드롭탑</a>
+                <ul class="subMenu">
+                  <li class="sub">
+                    <a href="droptop_story.html">드롭탑 이야기</a>
+                  </li>
+                  <li class="sub"><a href="#">드롭탑 앱 소개</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">메뉴</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="new.html">신제품</a></li>
+                  <li class="sub"><a href="coffee.html">커피</a></li>
+                  <li class="sub"><a href="beverage.html">음료</a></li>
+                  <li class="sub"><a href="food.html">푸드</a></li>
+                  <li class="sub"><a href="cake.html">케이크</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">매장안내</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="store.html">매장찾기</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">이벤트</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="event.html">이벤트 소식</a></li>
+                  <li class="sub"><a href="#">제휴카드</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">커뮤니티</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="notice.html">공지사항</a></li>
+                  <li class="sub"><a href="#">보도자료</a></li>
+                  <li class="sub"><a href="#">제작지원</a></li>
+                  <li class="sub"><a href="#">멀티미디어</a></li>
+                  <li class="sub"><a href="#">고객의 소리</a></li>
+                </ul>
+              </li>
+              <li class="main"><button id="franchise2">창업안내</button></li>
+            </ul>
+          </nav>
+          <!--창업버튼영역--------->
+          <div id="franchiseBox">
+            <button id="franchise">창업안내</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--헤더영역--------->
+    <header id="header">
+      <div id="menuContents">
+        <div id="menuImgBox">
+          <!--            <img src="images/menu_bg1.jpg" id="menuImg" alt="메뉴페이지1">-->
+
+          <div id="menuCaption">
+            <h2 class="menuName">Food</h2>
+            <p class="menuIntro">드롭탑만의 특별한 푸드메뉴</p>
+          </div>
+        </div>
+
+        <div id="menuTitleBox">
+          <ul id="menuTitle">
+            <li class="titleList"><a href="new.html">신제품</a></li>
+            <li class="titleList"><a href="coffee.html">커피</a></li>
+            <li class="titleList"><a href="beverage.html">음료</a></li>
+            <li class="titleList"><a href="food.html">푸드</a></li>
+            <li class="titleList"><a href="cake.html">케이크</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!--섹션영역--------->
+    <section id="menuOutBox">
+      <div id="topMenu">
+        <a href="#">홈</a>&nbsp;>&nbsp;<a href="#">메뉴</a>&nbsp;>&nbsp;<a
+          href="food.html"
+          >푸드</a
+        >
+      </div>
+
+      <div id="checkList">
+        <div class="check">
+          <div class="checkBox">
+            <i class="fas fa-check-square checkOn"></i>
+          </div>
+          <div class="checkText">전체</div>
+        </div>
+
+        <div class="check">
+          <div class="checkBox">
+            <i class="far fa-square checkOff"></i>
+          </div>
+          <div class="checkText">샌드위치</div>
+        </div>
+        <div class="check">
+          <div class="checkBox">
+            <i class="far fa-square checkOff"></i>
+          </div>
+          <div class="checkText">브레드</div>
+        </div>
+        <div class="check">
+          <div class="checkBox">
+            <i class="far fa-square checkOff"></i>
+          </div>
+          <div class="checkText">스몰디저트</div>
+        </div>
+      </div>
+
+      <ul id="menuStart">
+        <li class="coffeeList sand">
+          <img src="images/food1.png" alt="커피1" />
+          <h3>바비큐 치킨치즈 치아바타</h3>
+          <h4>Barbecue chicken cheese ciabatta</h4>
+          <div class="coffeeCaption">
+            <h3>바비큐 치킨치즈 치아바타</h3>
+            <h4>담백한 치즈와 치킨, 치즈가 들어간 바비큐 치아바타</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList sand">
+          <img src="images/food2.png" alt="커피1" />
+          <h3>머쉬룸 치킨 파니니</h3>
+          <h4>Mushroom chicken panini</h4>
+          <div class="coffeeCaption">
+            <h3>머쉬룸 치킨 파니니</h3>
+            <h4>
+              바질 페스토 소스와 닭가슴살, 발사믹 버섯을 넣어 풍미를 더한
+              샌드위치
+            </h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList sand">
+          <img src="images/food3.png" alt="커피1" />
+          <h3>핫 스파이시 치킨 파니니</h3>
+          <h4>Hot spicy chicken panini</h4>
+          <div class="coffeeCaption">
+            <h3>핫 스파이시 치킨 파니니</h3>
+            <h4>매콤한 치킨과 웨지감자가 들어간 치킨 파니니</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food4.png" alt="커피1" />
+          <h3>소금빵</h3>
+          <h4>Salted butter roll</h4>
+          <div class="coffeeCaption">
+            <h3>소금빵</h3>
+            <h4>짭조름한 소금과 버터 풍미가 가득한 부드러운 빵</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food5.png" alt="커피1" />
+          <h3>버터 프레첼</h3>
+          <h4>Butter pretzel</h4>
+          <div class="coffeeCaption">
+            <h3>버터 프레첼</h3>
+            <h4>프레첼 특유의 짭쪼름한 맛에 이즈니 버터를 곁들인 빵</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList small">
+          <img src="images/food7.png" alt="커피1" />
+          <h3>더블초코 르뱅쿠키</h3>
+          <h4>Double chocoalate levain cookie</h4>
+          <div class="coffeeCaption">
+            <h3>더블초코 르뱅쿠키</h3>
+            <h4>
+              달콤 쌉싸름한 초콜릿의 풍미가 진하게 느껴지는 더블초코 르뱅쿠키
+            </h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList small">
+          <img src="images/food8.png" alt="커피1" />
+          <h3>말차 마카다미아 르뱅쿠키</h3>
+          <h4>Matcha macadamia levain cookie</h4>
+          <div class="coffeeCaption">
+            <h3>말차 마카다미아 르뱅쿠키</h3>
+            <h4>
+              쌉싸름한 말차와 마카다미아의 고소한 맛까지 더해진 말차 마카다미아
+              르뱅쿠키
+            </h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList small">
+          <img src="images/food9.png" alt="커피1" />
+          <h3>클래식 르뱅쿠키</h3>
+          <h4>coffee</h4>
+          <div class="coffeeCaption">
+            <h3>클래식 르뱅쿠키</h3>
+            <h4>담백한 치즈와 치킨, 치즈가 들어간 바비큐 치아바타</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList small">
+          <img src="images/food10.png" alt="커피1" />
+          <h3>초코 마들렌</h3>
+          <h4>Chocolate madeleine</h4>
+          <div class="coffeeCaption">
+            <h3>초코 마들렌</h3>
+            <h4>초코의 풍미가 가득한 초코 마들렌</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList small">
+          <img src="images/food11.png" alt="커피1" />
+          <h3>얼그레이 마들렌</h3>
+          <h4>Earl grey madeleine</h4>
+          <div class="coffeeCaption">
+            <h3>얼그레이 마들렌</h3>
+            <h4>홍차의 풍미가 가득한 얼그레이 마들렌</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList small">
+          <img src="images/food12.png" alt="커피1" />
+          <h3>플레인 마들렌</h3>
+          <h4>Plain madeleine</h4>
+          <div class="coffeeCaption">
+            <h3>플레인 마들렌</h3>
+            <h4>고소하게 퍼지는 버터 향이 매력적인 플레인 마들렌</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList small">
+          <img src="images/food13.png" alt="커피1" />
+          <h3>휘낭시에</h3>
+          <h4>Financier</h4>
+          <div class="coffeeCaption">
+            <h3>휘낭시에</h3>
+            <h4>버터의 진한 풍미를 더한 겉은 바삭, 속은 촉촉한 휘낭시에</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food14.png" alt="커피1" />
+          <h3>바닐라 아이스크림 크로플</h3>
+          <h4>Vanilla ice cream croiffle</h4>
+          <div class="coffeeCaption">
+            <h3>바닐라 아이스크림 크로플</h3>
+            <h4>
+              고소한 크로와상 위에 부드러운 바닐라 아이스크림을 올린 와플식
+              크로와상
+            </h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food15.png" alt="커피1" />
+          <h3>플레인 크로플</h3>
+          <h4>Plain croiffle</h4>
+          <div class="coffeeCaption">
+            <h3>플레인 크로플</h3>
+            <h4>고소한 크로와상을 바삭하게 구운 와플식 크로와상</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food16.png" alt="커피1" />
+          <h3>프렌치 슈크림 크로와상</h3>
+          <h4>French custard cream croissant</h4>
+          <div class="coffeeCaption">
+            <h3>프렌치 슈크림 크로와상</h3>
+            <h4>달콤한 바닐라크림이 담긴 달달한 크로와상</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food17.png" alt="커피1" />
+          <h3>크로와상</h3>
+          <h4>Croissant</h4>
+          <div class="coffeeCaption">
+            <h3>크로와상</h3>
+            <h4>겉은 바삭하고 속은 쫀득한 신선한 크로와상</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food18.png" alt="커피1" />
+          <h3>블루베리 스콘</h3>
+          <h4>Blueberry scone</h4>
+          <div class="coffeeCaption">
+            <h3>블루베리 스콘</h3>
+            <h4>블루베리 잼을 토핑하여 만든 상큼한 블루베리 스콘</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food19.png" alt="커피1" />
+          <h3>스트로베리 스콘</h3>
+          <h4>Strawberry scone</h4>
+          <div class="coffeeCaption">
+            <h3>스트로베리 스콘</h3>
+            <h4>딸기 잼을 토핑하여 만든 상큼한 딸기 스콘</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food20.png" alt="커피1" />
+          <h3>플레인 스콘</h3>
+          <h4>Plain scone</h4>
+          <div class="coffeeCaption">
+            <h3>플레인 스콘</h3>
+            <h4>생크림과 버터의 풍미에 포슬포슬한 식감이 더해진 영국식 스콘</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList sand">
+          <img src="images/food21.jpg" alt="커피1" />
+          <h3>떡갈비 치즈 곡물 샌드위치</h3>
+          <h4>Tteok-galbi Cheese Grain Sandwich/h4>
+          <div class="coffeeCaption">
+            <h3>떡갈비 치즈 곡물 샌드위치</h3>
+            <h4>
+                그릴드 떡갈비에 매콤한 할라피뇨, 구운 양파, 버섯을 곁들인 곡물 빵 샌드위치
+              슈
+            </h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food22.jpg" alt="커피1" />
+          <h3>크리미 크로칸 슈</h3>
+          <h4>Cremy Croquant Chou</h4>
+          <div class="coffeeCaption">
+            <h3>크리미 크로칸 슈</h3>
+            <h4ㅍ>
+              100% 국산 우유를 사용한 커스타드 크림과 바삭한 쿠키가 만난 크로칸
+              슈
+            </h4ㅍ>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList small">
+          <img src="images/food25.jpg" alt="커피1" />
+          <h3>쿠앤크 마카롱</h3>
+          <h4>Cookie & Cream Macaron</h4>
+          <div class="coffeeCaption">
+            <h3>쿠앤크 마카롱</h3>
+            <h4>
+              바삭바삭 초코쿠키와 부드러운 풍미의 수제연유가 어우러진 달콤한
+              맛의 마카롱
+            </h4>
+
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList small">
+          <img src="images/food26.jpg" alt="커피1" />
+          <h3>뽀또치즈 마카롱</h3>
+          <h4>Poteau Cheese Macaron</h4>
+          <div class="coffeeCaption">
+            <h3>뽀또치즈 마카롱</h3>
+            <h4>
+              쏠티한 콜비잭 치즈와 달콤한 앙글레이즈 버터크림이 어우러진
+              단짠단짠 마카롱
+            </h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        
+       
+        <li class="coffeeList bread">
+          <img src="images/food29.jpg" alt="커피1" />
+          <h3>메이플 허니브레드</h3>
+          <h4>Maple Honey Bread</h4>
+          <div class="coffeeCaption">
+            <h3>메이플 허니브레드</h3>
+            <h4>허니크림과 함께 생크림, 캬라멜, 메이플소스, 아몬드를 토핑한 고소한 허니브레드</h4>
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+        <li class="coffeeList bread">
+          <img src="images/food30.jpg" alt="커피1" />
+          <h3>갈릭치즈 브레드</h3>
+          <h4>Garlic Cheese Bread</h4>
+          <div class="coffeeCaption">
+            <h3>갈릭치즈 브레드</h3>
+            <h4>
+              향긋한 마늘파우다,진한체다치즈,모짜렐라치즈를 토스트에 올려 구운
+              바삭한 브런치
+            </h4>
+
+            <p>
+              칼로리:20Kcal&nbsp;&nbsp;단백질:1.33g<br />당류:0g&nbsp;&nbsp;지방:0.07<br />나트륨:3.92mg
+            </p>
+            <button class="captionClose">&times;</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!--푸터영역--------->
+    <footer id="foot">
+      <div id="footOut">
+        <div class="logoBox logoBox2">
+          <!--로고박스-->
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <!--로고박스-->
+
+        <div id="footContents">
+          <div id="foota">
+            <a href="#">회사소개 </a>| <a href="#">개인정보취급방침 </a>|
+            <a href="#">이용약관 </a>|<a href="#"> 본/지사안내 </a>|
+            <a href="#">채용공고 </a>| <a href="#">시공업체등록 </a>|
+            <a href="#">사이트맵</a> <br />
+          </div>
+          <p id="footText">
+            서울특별시 서초구 강남대로 601 (잠원동 21-2) 8층,
+            (주)다도글로벌/드롭탑 | T.(02)541-7800<br />
+            사업자등록번호 : 211-88-47165 | 대표이사 : 임문수 |
+            개인정보관리책임자 : 김보철 | 통신판매업번호 : 2019-서울서초-1518<br />
+            마케팅∙제휴 문의 mkt@cafedroptop.com<br />
+            Copyright ⓒ 2021 DROPTOP All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--스크롤탑-->
+    <div id="top">
+      <i class="fa-solid fa-circle-chevron-up" id="scrollTop"></i>
+    </div>
+
+  </body>
+</html>

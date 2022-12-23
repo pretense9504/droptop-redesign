@@ -1,0 +1,243 @@
+@charset "utf-8"
+    
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+
+
+#menuContents {
+    width:100%; 
+    margin: auto;
+    margin-top:80px;
+}
+
+
+#menuImgBox {
+    background: url(../images/eventbg.jpeg) no-repeat center;
+    background-size: cover;
+    
+    width:100%; height: 300px;
+    
+    position: relative;
+}
+
+#menuImg{
+    width: 100%; display: block
+}
+
+
+#menuCaption{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0.4);
+    text-align: center;
+}
+
+.menuName{
+    font-size: 4.5rem;
+    animation: menu 1s both;
+}
+
+.menuIntro{
+    font-size: 1.1rem;
+    animation: menu 1s .5s both;
+}
+
+@keyframes menu {
+    from {transform: translateY(-20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+#menuTitleBox {
+    width:100%; line-height: 60px; margin: auto;
+     border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+#menuTitle {
+    width: 45%; max-width: 1200px; line-height:  60px; margin: auto;
+    list-style: none; padding: 0;
+    display: flex;
+   
+}
+
+
+.titleList {
+    width:50%; 
+    text-align: center;
+}
+.titleList a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    position: relative;
+    font-weight: 500;
+}
+
+.titleList:nth-child(1) a{
+    color: #141f6d;
+    font-weight: 600;
+}
+
+.titleList:first-child>a::after {
+    content: '';
+    
+    position: absolute; bottom: 0; left:50%;
+    transform: translateX(-50%);
+    width:0; height:5px;
+    background: #141f6d;
+    transition: .3s;
+    width:75%;
+}
+
+
+
+.titleList>a::after {
+    content: '';
+    
+    position: absolute; bottom: 0; left:50%;
+    transform: translateX(-50%);
+    width:0; height:5px;
+    background: #141f6d;
+    transition: .3s;
+}
+
+
+/* .titleList>a:hover::after {
+    width:75%;
+    
+} */
+
+
+#menuOutBox {
+    width:100%; max-width: 1200px; margin: auto;
+}
+
+#topMenu{
+    width: 100%; max-width: 1200px;
+    text-align: right; margin: auto;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+#topMenu a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: .9rem;
+   
+}
+
+#topMenu a:hover {
+    color: #141f6d;
+    font-weight: 500
+}
+
+#topMenu a:nth-child(3){
+    color: #141f6d;
+    font-weight: 500
+}
+
+
+#eventBox {
+    width: 100%; max-width: 1200px; margin: auto;
+    list-style: none; padding: 0;
+    display: flex; flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+
+#eventBox img{
+    display: block;
+    width: 100%;
+    transition: .3s
+}
+.eventList {
+    width:25%; 
+    padding: 10px;
+}
+
+#eventImg{
+    overflow: hidden;align-self: 
+}
+#eventBox img:hover{
+    transform: scale(1.05);
+}
+
+.eventCaption h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: 10px
+}
+
+
+.eventCaption p {
+    font-size:.9rem;
+    color: #888;
+    padding-top: 5px
+}
+
+#top {
+    position: fixed; bottom: -80px; right: 20px;
+    font-size: 3rem; color: #bbb;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+   #menuOutBox {
+        width:  95%;
+    }
+    
+    .eventList {
+        width: 33.3333%;
+        padding: 8px;
+    }
+    
+    
+    .eventCaption h2 {
+        font-size: .95rem;
+    } 
+    
+    .eventCaption p {
+        font-size: .8rem;
+    }
+    
+    
+    
+    
+    
+    
+}
+
+@media screen and (max-width: 400px) {
+    .eventList {
+        width: 50%;
+    }
+    
+    
+    .eventCaption h2 {
+        font-size: .85rem;
+    } 
+    
+    .eventCaption p {
+        font-size: .75rem;
+    }
+    
+        .menuName {
+        font-size: 3.8rem;
+    }
+    
+    .menuIntro{
+        font-size: .95rem;
+    }
+}
+
+
+

@@ -1,0 +1,328 @@
+@charset "utf-8"
+    
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+
+
+/*헤더 영역*/
+#header {
+    width:100%; margin: auto;
+
+}
+
+#menuImgBox {
+    background: url(../images/noticebg.jpeg) no-repeat center;
+    background-size: cover;
+    width:100%; height: 300px;
+    position: relative;
+    margin-top:80px;
+}
+
+#menuImg{
+    width: 100%; display: block
+}
+
+
+#menuCaption{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0.4);
+    text-align: center;
+}
+
+.menuName{
+    font-size: 4.5rem;
+    animation: menu 1s both;
+}
+
+.menuIntro{
+    font-size: 1.1rem;
+    animation: menu 1s .5s both;
+}
+
+@keyframes menu {
+    from {transform: translateY(-20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+#menuTitleBox {
+    width:100%; line-height: 60px; margin: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+#menuTitle {
+    width: 85%; max-width: 1200px; line-height:  60px; margin: auto;
+    list-style: none; padding: 0;
+    display: flex;
+}
+
+.titleList {
+    width:25%;
+    text-align: center;
+}
+
+.titleList a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    position: relative;
+    font-weight: 500;
+}
+
+.titleList:first-child a{
+    color: #141f6d;
+    font-weight: 600;
+}
+
+.titleList:first-child>a::after {
+    content: '';
+    position: absolute; bottom: 0; left:50%;
+    transform: translateX(-50%);
+    width:0; height:5px;
+    background: #141f6d;
+    transition: .3s;
+    width:75%;
+}
+
+
+
+/*섹션1 영역*/
+#sec1{
+    width:100%; max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+#topMenu{
+    width: 100%; max-width: 1200px;
+    text-align: right; margin: auto;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+#topMenu a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: .9rem;
+}
+
+#topMenu a:hover {
+    color: #141f6d;
+    font-weight: 500
+}
+
+#topMenu a:nth-child(3){
+    color: #141f6d;
+    font-weight: 500
+}
+
+
+/*내용*/
+#container {
+    width:100%; 
+    margin:auto;
+}
+
+#newsTitleOut {
+    margin-top:50px;
+    display: flex; flex-wrap: wrap;
+    justify-content: space-between;
+    color: #1a2680;
+    font-size: 1.2rem;
+}
+
+#searchBox>input {
+    width:220px; height: 40px;
+    border: 2px solid #1a2680;
+    border-radius: 10px;
+    padding: 2px 20px
+}
+
+#searchButton {
+    width:70px; height: 40px;
+    background: #1a2680;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+#searchButton:hover{
+    opacity: .8;
+}
+
+
+#noticeBox{
+    width:100%;
+    padding-top: 20px;
+}
+
+#notice{
+    width:100%; 
+    text-align: center;
+    list-style: none; padding: 0; 
+    border-bottom: 3px solid #1a2680;
+    
+}
+
+.noticeList {
+    display: flex; justify-content: space-between;
+    text-align: center;
+    line-height: 60px;
+    border-top: 1px solid #ccc;
+}
+
+.noticeList:first-child{
+    line-height: 70px !important;
+    border-top: 3px solid #1a2680;
+    border-bottom: 1.5px solid #1a2680;
+    color: #1a2680;
+}
+
+.noticeList>h4:first-child {
+    width:16%;
+}
+
+.noticeList>h4:nth-child(2){
+    width:52%;
+}
+.noticeList>h4:nth-child(3) {
+    width:16%;
+}
+
+.noticeList>h4:nth-child(4) {
+    width:16%;
+}
+
+.noticeText>p {
+    text-align: center;
+    color: #555;
+    transform: .3s
+    
+}
+
+.noticeText>p:first-child {
+    width:16%;
+}
+
+.noticeText>p:nth-child(2){
+    width:52%;
+    cursor: pointer;
+    transition: .3s
+}
+
+.noticeText>p:nth-child(2):hover{
+    font-weight: bold;
+    color: #1a2680;
+}
+.noticeText>p:nth-child(3) {
+    width:16%;
+}
+
+.noticeText>p:nth-child(4) {
+    width:16%;
+    
+}
+
+.noticeTitle>p:first-child {
+    width:16%;
+}
+
+.noticeTitle>p:nth-child(2){
+    width:52%;
+}
+.noticeTitle>p:nth-child(3) {
+    width:16%;
+}
+
+.noticeTitle>p:nth-child(4) {
+    width:16%;
+}
+
+
+.notice i {
+    color: #1a2680;
+}
+
+.notice p {
+    font-weight: bold;
+    background: #f5f5f9;
+}
+
+
+#numberBox{
+    padding-top:20px;
+}
+
+#number {
+    list-style: none; padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.no {
+    width:50px; line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 50px
+}
+
+.no:first-child{
+    background:#1a2680;
+    color: white;
+}
+
+#top {
+    position: fixed; bottom: -80px; right: 20px;
+    font-size: 3rem; color: #bbb;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    #container {
+        width:95%;
+        padding-top: 0px;
+    }
+
+    #newsTilteOut>h2 {
+        font-size: 1.5rem;
+    }
+    #searchBox input {
+        width:150px; height:38px;
+        padding: 2px 10px;
+    }
+
+    #searchButton{
+        width:55px; height:38px;
+        font-size: .8rem;
+    }
+    .noticeList h4{
+        font-size: .8rem;
+    }
+    .noticeList p{
+        font-size: .8srem;
+    }
+    .logoBox2{
+        display: none;
+    }
+}
+
+
+
+

@@ -1,0 +1,358 @@
+@charset "utf-8"
+    
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+
+
+#menuContents {
+    width:100%; 
+    margin: auto;
+    margin-top:110px;
+}
+
+
+#menuImgBox {
+    background: url(../images/menu_bg1.jpg) no-repeat top;
+    background-size: cover;
+    
+    width:100%; height: 300px;
+    
+    position: relative;
+}
+
+#menuImg{
+    width: 100%; display: block
+}
+
+
+#menuCaption{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0.4);
+    text-align: center;
+}
+
+.menuName{
+    font-size: 4.5rem;
+    animation: menu 1s both;
+}
+
+.menuIntro{
+    font-size: 1.1rem;
+    animation: menu 1s .5s both;
+}
+
+@keyframes menu {
+    from {transform: translateY(-20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+#menuTitleBox {
+    width:100%; line-height: 60px; margin: auto;
+     border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+#menuTitle {
+    width: 85%; max-width: 1200px; line-height:  60px; margin: auto;
+    list-style: none; padding: 0;
+    display: flex;
+   
+}
+
+
+.titleList {
+    width:25%;
+    text-align: center;
+}
+.titleList a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    position: relative;
+    font-weight: 500;
+}
+
+.titleList:first-child a{
+    color: #141f6d;
+    font-weight: 600;
+}
+
+
+
+.titleList:first-child>a::after {
+    content: '';
+    
+    position: absolute; bottom: 0; left:50%;
+    transform: translateX(-50%);
+    width:0; height:5px;
+    background: #141f6d;
+    transition: .3s;
+    width:75%;
+}
+
+
+
+
+
+#topMenu{
+    width: 100%; max-width: 1200px;
+    text-align: right; margin: auto;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+#topMenu a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: .9rem;
+   
+}
+
+#topMenu a:hover {
+    color: #141f6d;
+    font-weight: 500
+}
+
+#topMenu a:nth-child(3){
+    color: #141f6d;
+    font-weight: 500
+}
+
+
+
+
+#menuStart {
+    width:100%; max-width: 1200px; margin: auto;
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+.coffeeList {
+    
+    width: 23%;
+    text-align: center;
+    border: 1px solid #aaa;
+    height: 370px;
+    display: inline-block;
+    margin: 10px ;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.coffeeList img:hover{
+    transform: scale(1.1)
+}
+
+.coffeeList img {
+    width:100%;
+    transition: .3s;
+    margin-bottom: 5px;
+}
+
+.coffeeList h3 {
+    font-weight: 500;
+    color: #333;
+    font-size: 1.05rem;
+    
+}
+.coffeeList h4 {
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.05rem;
+    
+}
+
+.coffeeCaption {
+    position: absolute;
+    top:0; left:0;
+    background: rgba(0,0,0,.6);
+    width: 100%; height: 100%;
+    display: none;
+    color: white;
+    text-align:start;
+    padding: 20px;
+}
+
+.coffeeCaption h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white !important;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.coffeeCaption h4{
+    font-size:1rem;
+    color: white;
+    margin-bottom: 30px;
+    
+}
+.coffeeCaption p{
+    font-size:1rem;
+    color: white;
+    padding: 10px 0;
+    line-height: 1.6rem;
+    border-top: 2.5px solid white;
+}
+
+.captionClose {
+    position: absolute;
+    top:5px; right:5px;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer
+}
+
+
+#newTitle {
+    width: 100%; max-width: 1200px; margin: auto;  text-align: center;
+    color:#333;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+
+#newBox {
+    width:100%; max-width: 1200px;  margin: auto;
+    margin-bottom: 60px;
+}
+
+#newBox img {
+    width:70%; display: block; margin: auto;
+}
+
+
+#container {
+    width:100%; max-width: 1200px; margin: auto;
+}
+
+#searchBox {
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    color: #1a2680;
+    font-size: 1.2rem;
+}
+
+#noticeBox{
+    width:100%;  text-align: center;
+    list-style: none; padding: 0; margin: auto;
+    border-bottom: 3px solid #1a2680;
+    margin-top: 20px;
+}
+
+.noticeList {
+    display: flex; justify-content: space-between;
+    text-align: center;
+    line-height: 60px;
+    border-top: 1px solid #ccc;
+}
+
+.noticeList:first-child{
+    line-height: 70px !important;
+    border-top: 3px solid #1a2680;
+    border-bottom: 1.5px solid #1a2680;
+    color: #1a2680;
+}
+
+.noticeList>h4:first-child {
+    width:16%;
+}
+
+.noticeList>h4:nth-child(2){
+    width:52%;
+}
+.noticeList>h4:nth-child(3) {
+    width:16%;
+}
+
+.noticeList>h4:nth-child(4) {
+    width:16%;
+}
+
+.noticeText>p {
+    text-align: center;
+    color: #555;
+    
+}
+
+.noticeText>p:first-child {
+    width:16%;
+}
+
+.noticeText>p:nth-child(2){
+    width:52%;
+    cursor: pointer;
+    transition: .3s
+}
+
+.noticeText>p:nth-child(2):hover{
+    text-decoration: underline;
+    color: #1a2680;
+}
+.noticeText>p:nth-child(3) {
+    width:16%;
+}
+
+.noticeText>p:nth-child(4) {
+    width:16%;
+    
+}
+
+
+
+.noticeTitle>p:first-child {
+    width:16%;
+}
+
+.noticeTitle>p:nth-child(2){
+    width:52%;
+}
+.noticeTitle>p:nth-child(3) {
+    width:16%;
+}
+
+.noticeTitle>p:nth-child(4) {
+    width:16%;
+}
+
+
+.notice i {
+    color: #1a2680;
+}
+
+.notice p {
+    font-weight: bold;
+    background: #f5f5f9;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1155px) {
+    .coffeeList {
+        width:
+    }
+}
+
+
+

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    
+<link href="images/favi.png" rel="shortcut icon" />
+    
+<title> DROPTOP </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="inc/common.css" rel="stylesheet" />       
+<link href="inc/beverage.css" rel="stylesheet" />
+    
+    
+
+<script src="inc/common.js"></script>
+<script src="inc/beverage.js"></script>
+
+    
+</head>
+
+
+
+<body>
+   
+      <div id="outBox"><!--내비 전체박스-->
+            <div id="navTop"> <!--유틸리티내비-->
+                <ul id="menuTop">
+                    <li class="listTop"><a href="#">로그인</a></li>
+                    <li class="listTop"><a href="#">회원가입</a></li>
+                    <li class="listTop"><a href="#">멤버십</a></li>
+                    </ul>
+            </div><!--유틸리티내비-->
+        
+        <div id='subBack'></div>
+        
+        <div id="navBox"> <!--내비박스-->
+            
+            <div id="navInBox"> <!--1200-->
+                
+                <div class="logoBox">  <!--로고박스-->
+                    <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                </div>  <!--로고박스-->
+
+                <div id="view">&equiv;</div>
+                
+                
+                 <nav id="navi"><!--내비-->
+                <ul id="menu">
+                    <li class="main"><a href="#">드롭탑</a>
+                        <ul class="subMenu">
+                            <li class="sub"><a href="droptop_story.html">드롭탑 이야기</a></li>
+                            <li class="sub"><a href="#">드롭탑 앱 소개</a></li>
+                        </ul>
+                    </li>
+                    <li class="main"><a href="#">메뉴</a>
+                        <ul class="subMenu">
+                            <li class="sub"><a href="new.html">신제품</a></li>
+                            <li class="sub"><a href="coffee.html">커피</a></li>
+                            <li class="sub"><a href="beverage.html">음료</a></li>
+                            <li class="sub"><a href="food.html">푸드</a></li>
+                            <li class="sub"><a href="cake.html">케이크</a></li>
+                        </ul></li>
+                    <li class="main"><a href="#">매장안내</a>
+                        <ul class="subMenu">
+                            <li class="sub"><a href="store.html">매장찾기</a></li>
+                        </ul></li>
+                    <li class="main"><a href="#">이벤트</a>
+                        <ul class="subMenu">
+                            <li class="sub"><a href="event.html">이벤트 소식</a></li>
+                            <li class="sub"><a href="#">제휴카드</a></li>
+                        </ul></li>
+                    <li class="main"><a href="#">커뮤니티</a>
+                        <ul class="subMenu">
+                            <li class="sub"><a href="notice.html">공지사항</a></li>
+                            <li class="sub"><a href="#">보도자료</a></li>
+                            <li class="sub"><a href="#">제작지원</a></li>
+                            <li class="sub"><a href="#">멀티미디어</a></li>
+                            <li class="sub"><a href="#">고객의 소리</a></li>
+    
+                        </ul>
+                    </li> <li class="main"><button id="franchise2">창업안내</button></li>
+                    </ul>
+                    
+                </nav>
+                <div id="franchiseBox">
+                    <button id="franchise">창업안내</button>
+                </div>
+            </div><!--navInBox-->
+        
+
+        </div><!--내비박스1200 유틸내비 내비 로고-->
+     </div><!--내비 전체박스-->
+     
+     
+     
+    <!--헤더영역--------------------------->
+    <header id="header">
+    
+    <div id="menuContents">
+        
+        <div id="menuImgBox">
+<!--            <img src="images/menu_bg1.jpg" id="menuImg" alt="메뉴페이지1">-->
+            
+            <div id="menuCaption">
+                <h2 class="menuName">Beverage</h2>
+                <p class="menuIntro">드롭탑만의 이색적인 음료</p>
+            </div>
+        </div>
+        
+        <div id="menuTitleBox">
+            <ul id="menuTitle">
+                <li class="titleList"><a href="new.html">신제품</a></li>
+                <li class="titleList"><a href="coffee.html">커피</a></li>
+                <li class="titleList"><a href="beverage.html">음료</a></li>
+                <li class="titleList"><a href="food.html">푸드</a></li>
+                <li class="titleList"><a href="cake.html">케이크</a></li>
+            </ul>
+        </div>
+    </header>
+        
+        <div id="menuOutBox">
+        <div id="topMenu">
+            <a href="#">홈</a>&nbsp;>&nbsp;<a href="#">메뉴</a>&nbsp;>&nbsp;<a href="beverage.html">음료</a>
+        </div>
+        
+        <div id="checkList">
+         
+          <div class="check">
+              <div class="checkBox">
+                  <i class="fas fa-check-square checkOn"></i>
+                  </div>
+                  <div class="checkText">전체</div>
+            </div>
+            
+          <div class="check">
+              <div class="checkBox">
+                    <i class="far fa-square checkOff"></i>
+                  </div>
+                  <div class="checkText">블렌디드</div>
+          </div>
+          <div class="check">
+              <div class="checkBox">
+                    <i class="far fa-square checkOff"></i>
+                  </div>
+                  <div class="checkText">제조음료</div>
+          </div>
+          <div class="check">
+              <div class="checkBox">
+                    <i class="far fa-square checkOff"></i>
+                  </div>
+                  <div class="checkText">차</div>
+          </div>
+
+        </div>
+        
+    
+    
+    <ul id="menuStart">
+        <li class="coffeeList blend">
+            <img src="images/beverage0.png" alt="커피1">
+            <h3>코코넛 망고 블렌디드</h3>
+            <h4>Coconut Mango Blended</h4>
+            <div class="coffeeCaption">
+                <h3>코코넛 망고 블렌디드</h3>
+                <h4>입안 가득 풍미를 채워줄 진한 코코넛 크림에 달콤한 망고가 더해져 부드럽고 시원하게 즐길 수 있는 블렌디드
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList blend">
+            <img src="images/beverage1.png" alt="커피1">
+            <h3>쑥 슈페너</h3>
+            <h4>Mugwort Einspanner</h4>
+           <div class="coffeeCaption">
+                <h3>쑥 슈페너</h3>
+                <h4>국내산 인진 쑥과 화이트 초코 크림이 어우러져 산뜻한 봄의 기운을 즐길 수 있는 논커피 아인슈페너
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage3.png" alt="커피1">
+            <h3>슈크림 블라썸 라떼</h3>
+            <h4>Choucream Blossom Latte</h4>
+           <div class="coffeeCaption">
+                <h3>슈크림 블라썸 라떼</h3>
+                <h4>달콤하고 부드러운 슈크림과 은은하게 퍼지는 체리 블라썸이 어우러진 봄기운 가득한 논커피 라떼
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage4.png" alt="커피1">
+            <h3>슈크림 블라썸 카페라떼</h3>
+            <h4>Choucream Blossom Caffe Latte</h4>
+            <div class="coffeeCaption">
+                <h3>슈크림 블라썸 카페라떼</h3>
+                <h4>진한 에스프레소 샷과 달콤하고 부드러운 슈크림, 은은하게 퍼지는 체리 블라썸이 어우러진 카페라떼
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage5.jpg" alt="커피1">
+            <h3>앙버터 라떼</h3>
+            <h4>Ang-Butter Latte</h4>
+           <div class="coffeeCaption">
+                <h3>앙버터 라떼</h3>
+                <h4>달콤한 단팥과 부드러운 우유, 고소한 크림으로 누구나 즐길 수 있는 드롭탑 강남역점 시그니처 라떼
+
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage6.jpg" alt="커피1">
+            <h3>솔라에이드</h3>
+            <h4>Solar Ade</h4>
+           <div class="coffeeCaption">
+                <h3>솔라에이드</h3>
+                <h4>상큼한 레모네이드에 자몽 슬라이스를 더해 깔끔하게 즐길 수 있는 스파클링 음료
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage7.jpg" alt="커피1">
+            <h3>브루슈페너</h3>
+            <h4>Mugwort Einspanner</h4>
+            <div class="coffeeCaption">
+                <h3>브루슈페너</h3>
+                <h4>구운 아몬드의 고소함과 시나몬스틱으로 저으면 은은한 향이 매력적인 콜드브루 아인슈페너
+                </h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage8.jpg" alt="커피1">
+            <h3>선셋 에이드</h3>
+            <h4>Sunset Ade</h4>
+        <div class="coffeeCaption">
+                <h3>선셋 에이드</h3>
+                <h4>유자, 석류에 레몬 슬라이스를 넣은 상큼하고 달콤한 스파클링 음료
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage9.jpg" alt="커피1">
+            <h3>포레스트 에이드</h3>
+            <h4>Forest Ade</h4>
+            <div class="coffeeCaption">
+                <h3>포레스트 에이드</h3>
+                <h4>말차, 패션후르츠 베이스에 코코넛 젤리를 넣은 달콤한 스파클링 음료
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage10.jpg" alt="커피1">
+            <h3>말차베리 라떼</h3>
+            <h4>Malcha Berry Latte</h4>
+           <div class="coffeeCaption">
+                <h3>말차베리 라떼</h3>
+                <h4>깊고 진한 제주 프리미엄 말차와 달콤한 딸기를 부드럽게 즐길 수 있는 논커피 라떼
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage11.jpg" alt="커피1">
+            <h3>꿀고구마라떼</h3>
+            <h4>Honey Sweet Potato Latte</h4>
+           <div class="coffeeCaption">
+                <h3>꿀고구마라떼</h3>
+                <h4>달콤한 한겨울철 꿀고구마를 그대로~ 맛볼 수 있는 환상적인 라떼
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList blend">
+            <img src="images/beverage12.jpg" alt="커피1">
+            <h3>베리바나나 프로틴</h3>
+            <h4>Berry Banana Protein</h4>
+        <div class="coffeeCaption">
+                <h3>베리바나나 프로틴</h3>
+                <h4>블루베리, 바나나를 넣어 식사 대용으로 마시기 좋은 단백질 음료
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage13.png" alt="커피1">
+            <h3>딸기 라떼</h3>
+            <h4>strawberry latte</h4>
+         <div class="coffeeCaption">
+                <h3>딸기 라떼</h3>
+                <h4>딸기 함량이 높은 드롭탑 리얼 딸기 베이스로 만든 달콤하고 부드러운 음료
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage14.jpg" alt="커피1">
+            <h3>블랙 슈가 카페라떼</h3>
+            <h4>Black Sugar Cafe Latte
+            </h4>
+          <div class="coffeeCaption">
+                <h3>블랙 슈가 카페라떼</h3>
+                <h4>순수 비정제 사탕수수당 특유의 부드럽고 달콤한 맛과 쫄깃한 흑당펄을 드롭탑 스페셜티와 함께
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList beverage">
+            <img src="images/beverage15.png" alt="커피1">
+            <h3>아이스크림 콜드브루 라떼</h3>
+            <h4>Icecream Coldbrew Latte
+            </h4>
+          <div class="coffeeCaption">
+                <h3>아이스크림 콜드브루 라떼</h3>
+                <h4>프리미엄 바닐라 아이스크림과
+                    진한 콜드브루의 만남
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        
+        <li class="coffeeList tee">
+            <img src="images/beverage17.png" alt="커피1">
+            <h3>레드뱅쇼</h3>
+            <h4>Red Vin chaud</h4>
+          <div class="coffeeCaption">
+                <h3>레드뱅쇼</h3>
+                <h4>와인에 시나몬, 과일 등을 첨가하여 따뜻하게 끓인 음료
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+        <li class="coffeeList blend">
+            <img src="images/beverage18.jpeg" alt="커피1">
+            <h3>딸기 스무디</h3>
+            <h4>Strawberry Smoothie</h4>
+         <div class="coffeeCaption">
+                <h3>딸기 스무디</h3>
+                <h4>드롭탑 리얼 딸기 베이스를 듬뿍 넣어 새콤달콤한 맛을 즐길 수 있는 음료
+</h4>
+                <p>칼로리:355Kcal&nbsp;&nbsp;단백질:6.17g<br />당류:33.31g&nbsp;&nbsp;지방:11.09<br />나트륨:161.66mg</p>
+                <button class="captionClose">&times;</button>
+            </div> </li>
+    
+    </ul>
+  </div>  
+    </div>
+     
+     
+       <!--foot------------------------------->
+    <footer id="foot">
+        <div id="footOut">
+        <div class="logoBox logoBox2">  <!--로고박스-->
+            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>  <!--로고박스-->
+        
+        <div id="footContents">
+<div id="foota">
+            <a href="#">회사소개 </a>| <a href="#">개인정보취급방침 </a>| <a href="#">이용약관 </a>|<a href="#"> 본/지사안내 </a>| <a href="#">채용공고 </a>| <a href="#">시공업체등록 </a>| <a href="#">사이트맵</a> <br />
+    </div>
+<p id="footText">서울특별시 서초구 강남대로 601 (잠원동 21-2) 8층, (주)다도글로벌/드롭탑 | T.(02)541-7800<br />
+사업자등록번호 : 211-88-47165 | 대표이사 : 임문수 | 개인정보관리책임자 : 김보철 | 통신판매업번호 : 2019-서울서초-1518<br />
+마케팅∙제휴 문의 mkt@cafedroptop.com<br />
+Copyright ⓒ 2021 DROPTOP All Rights Reserved.</p>
+        </div>
+            </div>
+    </footer>
+    <!--스크롤탑-->
+    <div id="top">
+        <i class="fa-solid fa-circle-chevron-up" id="scrollTop"></i>
+      </div>
+     
+</body>
+    
+</html>

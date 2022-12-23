@@ -1,0 +1,287 @@
+@charset "utf-8"
+    
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+
+
+#header {
+    width:100%; height: 300px;
+    margin-top:80px;
+    position: relative;
+}
+
+#newBox img{
+    width:100%;
+}
+
+#menuImgBox {
+    width:100%; height: 300px;
+    background: url(../images/menu_bg1.jpg) no-repeat top;
+    background-size: cover;
+    
+    
+}
+
+#menuImg{
+    width: 100%; display: block;
+    
+}
+
+
+#menuCaption{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0.4);
+    text-align: center;
+}
+
+.menuName{
+    font-size: 4.5rem;
+    animation: menu 1s both;
+}
+
+.menuIntro{
+    font-size: 1.1rem;
+    animation: menu 1s .5s both;
+}
+
+@keyframes menu {
+    from {transform: translateY(-20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+#menuTitleBox {
+    position: absolute;
+    top:100%; left:0;
+    width:100%; line-height: 60px; margin: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+#menuTitle {
+    width: 85%; max-width: 1200px; line-height:  60px; margin: auto;
+    list-style: none; padding: 0;
+    display: flex;
+}
+
+
+.titleList {
+    width:25%;
+    text-align: center;
+}
+.titleList a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    position: relative;
+    font-weight: 500;
+}
+
+.titleList:first-child a{
+    color: #141f6d;
+    font-weight: 600;
+}
+
+
+
+.titleList:first-child>a::after {
+    content: '';
+    
+    position: absolute; bottom: 0; left:50%;
+    transform: translateX(-50%);
+    width:0; height:5px;
+    background: #141f6d;
+    transition: .3s;
+    width:75%;
+}
+
+
+#menuOutBox {
+    width:100%; max-width: 1200px; margin: auto;
+    margin-top: 65px;
+}
+
+
+#topMenu{
+    width: 100%; max-width: 1200px;
+    text-align: right; margin: auto;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+#topMenu a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: .9rem;
+   
+}
+
+#topMenu a:hover {
+    color: #141f6d;
+    font-weight: 500
+}
+
+#topMenu a:nth-child(3){
+    color: #141f6d;
+    font-weight: 500
+}
+
+
+
+
+#menuStart {
+    width:100%; max-width: 1200px; margin: auto;
+    list-style: none;
+    padding: 0;
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    margin-bottom: 50px;
+    
+}
+
+.coffeeList {
+    
+    width: 24%;
+    text-align: center;
+    border: 1px solid #aaa;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.coffeeList img:hover{
+    transform: scale(1.1)
+}
+
+.coffeeList img {
+    width:100%;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.coffeeList h3 {
+    font-weight: 500;
+    color: #333;
+    font-size: 1.05rem;
+    
+}
+.coffeeList h4 {
+    font-weight: 400;
+    color: #aaa;
+    font-size: 1.05rem;
+    
+}
+
+.coffeeCaption {
+    position: absolute;
+    top:0; left:0;
+    background: rgba(0,0,0,.6);
+    width: 100%; height: 100%;
+    display: none;
+    color: white;
+    text-align:start;
+    padding: 20px;
+}
+
+.coffeeCaption h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white !important;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.coffeeCaption h4{
+    font-size:1rem;
+    color: white;
+    margin-bottom: 30px;
+    
+}
+.coffeeCaption p{
+    font-size:1rem;
+    color: white;
+    padding: 10px 0;
+    line-height: 1.6rem;
+    border-top: 2.5px solid white;
+}
+
+.captionClose {
+    position: absolute;
+    top:5px; right:5px;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer
+}
+
+
+#newTitle {
+    width: 100%; max-width: 1200px; margin: auto;  text-align: center;
+    color:#333;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+
+#newBox {
+    width:100%; max-width: 1200px;  margin: auto;
+    margin-bottom: 60px;
+}
+
+#newBox>img {
+    width:70%; display: block; margin: auto;
+}
+
+#top {
+    position: fixed; bottom: -80px; right: 20px;
+    font-size: 3rem; color: #bbb;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .coffeeList {
+        width: 49%;
+    }
+    
+    #menuOutBox {
+        width:  95%;
+    }
+
+    #newBox>img {
+        width:100%;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+   .coffeeList {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #menuOutBox {
+        width:  95%;
+    }
+
+    .logoBox2{
+        display: none;
+    }
+
+}
+
+
+
+
+

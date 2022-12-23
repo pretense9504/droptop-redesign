@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    />
+
+    <link href="images/favi.png" rel="shortcut icon" />
+
+    <title>DROPTOP</title>
+
+    <link href="inc/common.css" rel="stylesheet" />
+    <link href="inc/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="inc/common.js"></script>
+    <script src="inc/index.js"></script>
+    <script src="plugin/easingScroll/jquery.easeScroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+      integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <!--프리로딩-->
+    <div id="preloading">
+      <div class="loader"><img src="images/loading.gif" alt="로딩" /></div>
+    </div>
+
+    <!--내비영역--------->
+    <div id="outBox">
+      <div id="navTop">
+        <ul id="menuTop">
+          <li class="listTop"><a href="#">로그인</a></li>
+          <li class="listTop"><a href="#">회원가입</a></li>
+          <li class="listTop"><a href="#">멤버십</a></li>
+        </ul>
+      </div>
+
+      <div id="subBack"></div>
+
+      <div id="navBox">
+        <div id="navInBox">
+          <div class="logoBox">
+            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+
+          <div id="view">&equiv;</div>
+
+          <nav id="navi">
+            <!--내비-->
+            <ul id="menu">
+              <li class="main">
+                <a href="#">드롭탑</a>
+                <ul class="subMenu">
+                  <li class="sub">
+                    <a href="droptop_story.html">드롭탑 이야기</a>
+                  </li>
+                  <li class="sub"><a href="#">드롭탑 앱 소개</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">메뉴</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="new.html">신제품</a></li>
+                  <li class="sub"><a href="coffee.html">커피</a></li>
+                  <li class="sub"><a href="beverage.html">음료</a></li>
+                  <li class="sub"><a href="food.html">푸드</a></li>
+                  <li class="sub"><a href="cake.html">케이크</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">매장안내</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="store.html">매장찾기</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">이벤트</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="event.html">이벤트 소식</a></li>
+                  <li class="sub"><a href="#">제휴카드</a></li>
+                </ul>
+              </li>
+              <li class="main">
+                <a href="#">커뮤니티</a>
+                <ul class="subMenu">
+                  <li class="sub"><a href="notice.html">공지사항</a></li>
+                  <li class="sub"><a href="#">보도자료</a></li>
+                  <li class="sub"><a href="#">제작지원</a></li>
+                  <li class="sub"><a href="#">멀티미디어</a></li>
+                  <li class="sub"><a href="#">고객의 소리</a></li>
+                </ul>
+              </li>
+              <li class="main"><button id="franchise2">창업안내</button></li>
+            </ul>
+          </nav>
+          <!--창업버튼영역--------->
+          <div id="franchiseBox">
+            <button id="franchise">창업안내</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--헤더영역--------->
+    <header id="header" class="mySection">
+      <div id="headerInBox">
+        <div id="headerTitle">
+          <h1>AUTUMN</h1>
+          <h2>TASTES!</h2>
+        </div>
+
+        <button class="mainButton">메뉴 보러가기</button>
+
+        <!--PC-->
+        <div class="headMenu headMenu1">
+          <img src="images/pc_main1.png" class="headImage" alt="헤더메뉴1" />
+        </div>
+
+        <div class="headMenu headMenu2">
+          <img src="images/pc_main2.png" class="headImage" alt="헤더메뉴2" />
+        </div>
+
+        <div class="headMenu headMenu3">
+          <img src="images/pc_main3.png" class="headImage" alt="헤더메뉴3" />
+        </div>
+
+        <!--모바일-->
+        <div class="headMenuM headMenuM1">
+          <img src="images/m_main1.png" class="headImageM" alt="모바일메뉴1" />
+        </div>
+
+        <div class="headMenuM headMenuM2">
+          <img src="images/m_main2.png" class="headImageM" alt="모바일메뉴2" />
+        </div>
+
+        <div class="headMenuM headMenuM3">
+          <img src="images/m_main3.png" class="headImageM" alt="모바일메뉴3" />
+        </div>
+
+        <!--sns메뉴-->
+        <div class="snsBox">
+          <div class="sns">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/droptop_official/"
+              _blank
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="sns">
+            <a target="_blank" href="https://www.facebook.com/cafedroptopkr"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+
+          <div class="sns">
+            <a target="_blank" href="https://www.facebook.com/cafedroptopkr"
+              ><i class="fa-solid fa-mobile-screen-button"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--섹션1영역--------->
+    <section id="sec1" class="mySection">
+      <div id="outBox1">
+        <div class="sectionTitle">
+          <h2>BEST MENU</h2>
+        </div>
+
+        <div id="bestMenu">
+          <div class="bestTitle1 bestText1 bestActive">
+            <h3>BEST COFFEE</h3>
+          </div>
+          <div class="bestTitle1 bestText2">
+            <h3>BEST BEVERAGES</h3>
+          </div>
+          <div class="bestTitle1 bestText3">
+            <h3>BEST DESSERT</h3>
+          </div>
+        </div>
+
+        <div id="menuOutBox1">
+          <div id="slideOutBox1">
+            <ul id="slideBox1">
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best1_1.jpg" class="thumb1" alt="베스트1"
+                /></a>
+                <div class="caption1">
+                  <h2>오션 클라우디 콜드브루</h2>
+                  <h3>Ocean Cloudy Coldbrew</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best1_2.jpg" class="thumb1" alt="베스트2"
+                /></a>
+                <div class="caption1">
+                  <h2>딥초콜릿 카페라떼</h2>
+                  <h3>Deep Chocolate Cafe Latte</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best1_3.jpg" class="thumb1" alt="베스트3"
+                /></a>
+                <div class="caption1">
+                  <h2>앙버터 라떼</h2>
+                  <h3>Ang-Butter Latte</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best1_4.jpg" class="thumb1" alt="베스트4"
+                /></a>
+                <div class="caption1">
+                  <h2>스페셜티 카라멜마끼아또</h2>
+                  <h3>Specialty Caramel Macchiato</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best1_6.jpg" class="thumb1" alt="베스트6"
+                /></a>
+                <div class="caption1">
+                  <h2>블랙 슈가 카페라떼</h2>
+                  <h3>Black Sugar Cafe Latte</h3>
+                </div>
+              </li>
+            </ul>
+            <ul id="slideBox2">
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best2_1.jpg" class="thumb1" alt="베스트1"
+                /></a>
+                <div class="caption1">
+                  <h2>샤인머스캣 에이드</h2>
+                  <h3>Shine Muscat Ade</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best2_2.jpg" class="thumb1" alt="베스트2"
+                /></a>
+                <div class="caption1">
+                  <h2>솔라에이드</h2>
+                  <h3>Solar Ade</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best2_3.jpg" class="thumb1" alt="베스트3"
+                /></a>
+                <div class="caption1">
+                  <h2>선셋 에이드</h2>
+                  <h3>Sunset Ade</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best2_5.jpg" class="thumb1" alt="베스트4"
+                /></a>
+                <div class="caption1">
+                  <h2>말차베리 라떼</h2>
+                  <h3>Malcha Berry Latte</h3>
+                </div>
+              </li>
+            </ul>
+            <ul id="slideBox3">
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best3_1.jpg" class="thumb1" alt="베스트1"
+                /></a>
+                <div class="caption1">
+                  <h2>다크포레누아</h2>
+                  <h3>Dark Forêt Noire Cake</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best3_2.jpg" class="thumb1" alt="베스트2"
+                /></a>
+                <div class="caption1">
+                  <h2>그린티</h2>
+                  <h3>Greentea Cake</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best3_3.jpg" class="thumb1" alt="베스트3"
+                /></a>
+                <div class="caption1">
+                  <h2>수플레치즈</h2>
+                  <h3>Souffle Cheese Cake</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best3_4.jpg" class="thumb1" alt="베스트4"
+                /></a>
+                <div class="caption1">
+                  <h2>스트로베리포레누아</h2>
+                  <h3>Strawberry Forêt Noire Cake</h3>
+                </div>
+              </li>
+              <li class="slide1" link="a.html">
+                <a href="#"
+                  ><img src="images/best3_5.jpg" class="thumb1" alt="베스트5"
+                /></a>
+                <div class="caption1">
+                  <h2>캐롯</h2>
+                  <h3>Carrot Cake</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <button class="menuButton menuLeft">&#10092;</button>
+          <button class="menuButton menuRight">&#10093;</button>
+        </div>
+      </div>
+    </section>
+
+    <!--섹션2영역--------->
+    <section id="sec2" class="mySection">
+      <div id="outBox2">
+        <div class="sectionTitle">
+          <h2>925 BLEND</h2>
+        </div>
+
+        <h3 id="subTitle2">925, 커피 한 잔에 작품을 담다</h3>
+
+        <div class="sec2Line"></div>
+        <p>
+          드롭탑의 925블렌드는 3년여 동안 천여 가지 다양한 생두 조합과 구백번
+          이상의 로스팅 시험 끝에 925번째 완벽한 커피로 탄생한 걸작입니다.
+          아시아 최초 큐그레이더를 포함한 글로벌 패널의 찬사를 받은 925블렌드
+          쓴맛은 줄이고 단맛과 다채로운 향을 끌어올린 완벽한 스페셜티 커피를
+          만나보세요.
+        </p>
+
+        <button id="button925">자세히보기</button>
+      </div>
+    </section>
+
+    <!--섹션3영역--------->
+    <section id="sec3" class="mySection">
+      <div id="outBox3">
+        <div class="sectionTitle sectionTitle_left">
+          <h2>MEMBERSHIP</h2>
+        </div>
+
+        <div id="memberContents">
+          <p>
+            고객 편의성을 고려하여 최적화된 APP의 픽오더 서비스와 <br />
+            키오스크 주문으로 보다 빠르고 스마트하게 드롭탑 메뉴를 즐겨보세요!
+          </p>
+        </div>
+
+        <button id="memberButton">드롭탑 멤버십 APP</button>
+
+        <div id="membershipBox">
+          <img src="images/dropapp.gif" id="phoneImg" />
+          <img src="images/phone.png" id="phone" />
+        </div>
+      </div>
+    </section>
+
+    <!--섹션4영역--------->
+    <section id="sec4" class="mySection">
+      <div id="outBox4">
+        <div class="sectionTitle2">
+          <h2>FRANCHISE</h2>
+        </div>
+
+        <h3 id="subTitle4">
+          당신의 창업 성공 스토리, <br />
+          드롭탑이 함께합니다.
+        </h3>
+
+        <div class="sec4Line"></div>
+
+        <div id="sectionContents4">
+          <div class="franchiseList">
+            <a href="#">창업안내</a>
+          </div>
+          <div class="franchiseList">
+            <a href="#">창업설명회</a>
+          </div>
+          <div class="franchiseList">
+            <a href="#">가맹상담</a>
+          </div>
+          <div class="franchiseList">
+            <a href="#">마스터앱</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--푸터영역--------->
+    <footer id="foot">
+      <div id="footOut">
+        <div class="logoBox logoBox2">
+          <!--로고박스-->
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <!--로고박스-->
+
+        <div id="footContents">
+          <div id="foota">
+            <a href="#">회사소개 </a>| <a href="#">개인정보취급방침 </a>|
+            <a href="#">이용약관 </a>|<a href="#"> 본/지사안내 </a>|
+            <a href="#">채용공고 </a>| <a href="#">시공업체등록 </a>|
+            <a href="#">사이트맵</a> <br />
+          </div>
+          <p id="footText">
+            서울특별시 서초구 강남대로 601 (잠원동 21-2) 8층,
+            (주)다도글로벌/드롭탑 | T.(02)541-7800<br />
+            사업자등록번호 : 211-88-47165 | 대표이사 : 임문수 |
+            개인정보관리책임자 : 김보철 | 통신판매업번호 : 2019-서울서초-1518<br />
+            마케팅∙제휴 문의 mkt@cafedroptop.com<br />
+            Copyright ⓒ 2021 DROPTOP All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--스크롤탑-->
+    <div id="top">
+      <i class="fa-solid fa-circle-chevron-up" id="scrollTop"></i>
+    </div>
+
+    <script>
+      AOS.init();
+
+      $(function () {
+        //Scrollify PlugIn
+        $.scrollify({
+          section: ".mySection", //Scrollify 적용할 대상의 클래스 이름
+          sectionName: "section-name",
+          interstitialSection: "",
+          easing: "easeOutExpo", //속도 변화(easing)
+          scrollSpeed: 1000, //스크롤 속도(mili second)
+          offset: 0, //스크롤 위치 추가 Offset 값
+          scrollbars: true, //스크롤바 표시 여부(true/false)
+          standardScrollElements: "",
+          setHeights: true, //세로폭 화면에 맞춤(true/false)
+          overflowScroll: true, //섹션 높이를 벗어난 영역에 대한 스크롤(true/false)
+          updateHash: true,
+          touchScroll: true,
+          before: function () {},
+          after: function () {},
+          afterResize: function () {},
+          afterRender: function () {},
+        });
+      }); //end Scrollify
+    </script>
+  </body>
+</html>
